@@ -5,6 +5,7 @@
 #include <chrono>
 #include <vector>
 #include <iostream>
+#include <time.h>
 
 using namespace std;
 using namespace std::chrono;

@@ -4,8 +4,8 @@
 
 Game::Game(Config *config)
 {
-	this->maxwords = config->getMaxWords;
-	this->maxtries = config->getMaxTries;
+	this->maxwords = *config->getMaxWords;
+	this->maxtries = *config->getMaxTries;
 }
 
 
