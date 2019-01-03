@@ -64,6 +64,7 @@ void Game::play()
 					cout << "Benoetigte Zeit: " << min << " min " << sec << " sec" << endl;
 					return;
 				}
+				system("pause");
 			}
 			else {
 				throw HangmanException();

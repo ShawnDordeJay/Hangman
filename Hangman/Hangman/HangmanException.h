@@ -9,6 +9,6 @@ class HangmanException
 public:
 	virtual const char* what() const throw()
 	{
-		return "Moegliche Versuche aufgebraucht. Spiel wird beendet";
+		return "Moegliche Versuche aufgebraucht. Sie haben verloren\nSpiel wird beendet";
 	}
 };
