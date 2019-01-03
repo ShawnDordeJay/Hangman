@@ -13,6 +13,8 @@ Config::~Config()
 {
 }
 
+Config *Config::instance = 0;
+
 Config * Config::getInstance(int maxwords, int maxtries)
 {
 	if (instance == 0) {
@@ -33,6 +35,6 @@ int Config::getMaxTries()
 	return this->maxtries;
 }
 
-static Config *instance = 0;
+
 
 

@@ -22,18 +22,19 @@ public:
 	
 	
 private:
-	vector <string> words;
-	vector <char> hiddenword;
-	vector <char> chosenword;
+	
+	vector <string> words; //eingegebenen Wörter
+	vector <char> hiddenword; //gewählte Wort zensiert
+	vector <char> chosenword; //gewählte Wort
 	int maxwords;
 	int maxtries;
 
-	void getRandomWord();
-	void checkLetter(char letter);
-	milliseconds getTime();
-	void hideword();
-	void printHiddenword();
-	bool checkWin();
+	void getRandomWord(); //sucht zufällig ein Wort aus den eingegebenen Wörtern
+	void checkLetter(char letter); //sucht nach eingebenen Buchstaben im ausgewählten Wort
+	milliseconds getTime(); //name ist programm
+	void hideword(); //ausgewähltes Wort zensieren
+	void printHiddenword(); //name ist programm
+	bool checkWin(); //name ist programm
 
 };
 
