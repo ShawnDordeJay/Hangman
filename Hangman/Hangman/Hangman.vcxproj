@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="Config.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="HangmanException.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>

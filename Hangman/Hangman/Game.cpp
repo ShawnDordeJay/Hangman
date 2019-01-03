@@ -39,12 +39,27 @@ void Game::play()
 
 	while (1) {
 		try {
-			if (this->maxtries != 0) {
+			if (this->maxtries > 0) {
 
+				this->printHiddenword();
+				cout << "Waehlen Sie einen Buchstaben und bestaetigen Sie mit Enter";
+				cin >> letter;
+
+				this->checkLetter(letter);
+				this->maxtries--;
+				
+				if (checkWin()) {
+					cout << "Sie haben das Wort erraten und somit gewonnen. Spiel wird beendet." << endl;
+					return;
+				}
 			}
 			else {
-
+				throw HangmanException();
 			}
+		}
+		catch(HangmanException &ex){
+			cout << ex.what() << endl;
+			return;
 		}
 	}
 	
@@ -109,4 +124,14 @@ void Game::printHiddenword()
 		cout << letter << " ";
 	}
 	cout << endl;
+}
+
+bool Game::checkWin()
+{
+	for (unsigned int i = 0; i < this->hiddenword.size(); i++) {
+		if (this->hiddenword[i] == '-') {
+			return false;
+		}
+	}
+	return true;;
 }

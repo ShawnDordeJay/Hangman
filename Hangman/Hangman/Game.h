@@ -1,5 +1,6 @@
 #pragma once
 #include "Config.h"
+#include "HangmanException.h"
 #include <string>
 #include <chrono>
 #include <vector>
@@ -31,6 +32,7 @@ private:
 	milliseconds getTime();
 	void hideword();
 	void printHiddenword();
+	bool checkWin();
 
 };
 
