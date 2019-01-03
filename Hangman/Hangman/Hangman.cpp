@@ -1,4 +1,4 @@
-
+//Zeitaufwand ca 2,5-3 Stunde inkl debug
 
 #include "pch.h"
 #include <iostream>
