@@ -61,7 +61,7 @@ void Game::play()
 
 					cout << "Sie haben das Wort erraten und somit gewonnen." << endl;
 					cout << "Versuche " << versuche << " von " << this->maxtries << endl;
-					cout << "Benoetigte Zeit: " << min << " min " << sec << " sec" endl;
+					cout << "Benoetigte Zeit: " << min << " min " << sec << " sec" << endl;
 					return;
 				}
 			}
